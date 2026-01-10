@@ -5,28 +5,28 @@ using UnityEngine.Video;
 public class MainMenu : MonoBehaviour
 {
     public VideoPlayer introVideo;
+    public GameObject introVideoUI;
     public AudioSource menuMusic;
 
-   public void PlayGame()
-{
-    Debug.Log("PLAY BUTTON CLICKED");
+    bool isPlaying = false;
 
-    if (menuMusic != null)
-        menuMusic.Stop();
-
-    if (introVideo != null)
+    public void PlayGame()
     {
-        Debug.Log("VIDEO FOUND, PLAYING");
-        introVideo.gameObject.SetActive(true);
-        introVideo.Play();
+        if (isPlaying) return;
+        isPlaying = true;
+
+        // Stop menu music
+        if (menuMusic != null)
+            menuMusic.Stop();
+
+        // Show video UI
+        introVideoUI.SetActive(true);
+
+        // Play video
+        introVideo.loopPointReached -= OnVideoFinished;
         introVideo.loopPointReached += OnVideoFinished;
+        introVideo.Play();
     }
-    else
-    {
-        Debug.Log("NO VIDEO, LOADING SCENE");
-        SceneManager.LoadScene("GameScene");
-    }
-}
 
     void OnVideoFinished(VideoPlayer vp)
     {
