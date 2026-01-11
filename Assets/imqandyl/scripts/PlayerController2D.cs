@@ -8,6 +8,7 @@ public class PlayerController2D : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject enemy;
     public LogicManager logic;
+    public AudioSource deathSound;
 
     void Start()
     {
@@ -34,6 +35,7 @@ public class PlayerController2D : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(collision.gameObject);
+            deathSound.Play();
             Debug.Log("hit enemy");
             logic.GameOver();
             Time.timeScale = 0f;
@@ -43,6 +45,12 @@ public class PlayerController2D : MonoBehaviour
             Debug.Log("Reached Goal!");
             Time.timeScale = 0f;
             SceneManager.LoadScene("snake");
+        }
+        if (collision.gameObject.CompareTag("End"))
+        {
+            Debug.Log("Reached End!");
+            Time.timeScale = 0f;
+            SceneManager.LoadScene("ending");
         }
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - Logic
   - Checkpoint
   - Video
+  - End
   layers:
   - Default
   - TransparentFX

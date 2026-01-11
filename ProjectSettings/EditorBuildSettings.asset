@@ -12,14 +12,23 @@ EditorBuildSettings:
     path: Assets/imqandyl/mainmenu.unity
     guid: f04ac488f944a7544933941e3be0874c
   - enabled: 1
+    path: Assets/eshan/scenes/opening.unity
+    guid: 836dd25756130414aa8bdef7f76bc1f7
+  - enabled: 1
     path: Assets/eshan/scenes/abudhabi.unity
     guid: 098773cfb8d73ab4da8ef3433ef18a38
   - enabled: 1
     path: Assets/eshan/scenes/snake.unity
     guid: 441e0c90ad6c6fc44b2567588cc07aee
+  - enabled: 0
+    path: Assets/eshan/scenes/old.unity
+    guid: 8e67322bb4848f646b66539f49090bb9
   - enabled: 1
-    path: Assets/eshan/scenes/opening.unity
-    guid: 836dd25756130414aa8bdef7f76bc1f7
+    path: Assets/eshan/scenes/alain.unity
+    guid: 0acd9afde57f5894886f0a0a17a596d8
+  - enabled: 1
+    path: Assets/eshan/scenes/ending.unity
+    guid: 0b213b07990078c4cb12e68b4ff9fb82
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
