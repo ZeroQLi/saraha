@@ -18,14 +18,14 @@ public class MainMenu : MonoBehaviour
         // Stop menu music
         if (menuMusic != null)
             menuMusic.Stop();
+        SceneManager.LoadScene("opening");
+        //// Show video UI
+        //introVideoUI.SetActive(true);
 
-        // Show video UI
-        introVideoUI.SetActive(true);
-
-        // Play video
-        introVideo.loopPointReached -= OnVideoFinished;
-        introVideo.loopPointReached += OnVideoFinished;
-        introVideo.Play();
+        //// Play video
+        //introVideo.loopPointReached -= OnVideoFinished;
+        //introVideo.loopPointReached += OnVideoFinished;
+        //introVideo.Play();
     }
 
     void OnVideoFinished(VideoPlayer vp)
