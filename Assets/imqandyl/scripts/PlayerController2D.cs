@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class PlayerController2D : MonoBehaviour
 {
@@ -35,6 +37,12 @@ public class PlayerController2D : MonoBehaviour
             Debug.Log("hit enemy");
             logic.GameOver();
             Time.timeScale = 0f;
+        }
+        if (collision.gameObject.CompareTag("Checkpoint"))
+        {
+            Debug.Log("Reached Goal!");
+            Time.timeScale = 0f;
+            SceneManager.LoadScene("snake");
         }
     }
 }

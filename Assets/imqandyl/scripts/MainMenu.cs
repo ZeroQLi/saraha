@@ -30,7 +30,7 @@ public class MainMenu : MonoBehaviour
 
     void OnVideoFinished(VideoPlayer vp)
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("abudhabi");
     }
 
     public void QuitGame()
