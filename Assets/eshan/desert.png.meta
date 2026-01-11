@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a649eb99991672d4fb16a04334304f33
+guid: 3e0fc44d88d7ad040bab29cb4fe5c63e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 622568218593056517
-    second: desert_topdown_0
+      213: 603645287242772497
+    second: desert_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: desert_topdown_0
+      name: desert_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2400
-        height: 1600
+        width: 1200
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 507dfad0f7ec3a800800000000000000
-      internalID: 622568218593056517
+      spriteID: 110b174c034906800800000000000000
+      internalID: 603645287242772497
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      desert_topdown_0: 622568218593056517
+      desert_0: 603645287242772497
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
